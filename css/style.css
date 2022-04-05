@@ -36,6 +36,11 @@ main {
   margin: 16px 5vw 64px 5vw;
 }
 
+.buttonHero {
+  margin-bottom: 32px;
+  margin-top: 2vh;
+}
+
 #heroText > h1 {
   margin: 16px 0px;
   font-size: 32px;
@@ -119,6 +124,36 @@ main {
 }
 /* DISCOUNT SECTION END */
 
+/* FOOTER START */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 64px;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+footer > img {
+  height: 32px;
+  object-fit: cover;
+  margin-top: 8px;
+}
+
+footer > div {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+/* FOOTER END */
+
 @media screen and (min-width: 768px) {
   main {
     flex-direction: row;
@@ -182,6 +217,29 @@ main {
   }
 
   /* DISCOUNT SECTION END */
+
+  /* FOOTER START */
+
+  footer {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  footer > ul > li {
+    margin: 0 8px;
+  }
+
+  footer > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  footer > img {
+    margin-top: 0px;
+  }
+
+  /* FOOTER END */
 }
 
 @media screen and (max-width: 768px) {
