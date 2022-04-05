@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 *,*::before,*::after {
+  box-sizing: inherit;
+}
+
+html {
   box-sizing: border-box;
 }
 
@@ -13,6 +17,7 @@
 body {
   background-color: #A6A68C;
   min-height: 100vh;
+  box-sizing: border-box;
 }
 
 main {
@@ -57,6 +62,7 @@ main {
   background-color: #FFF;
   color: #000; /* Fallback para navegadores antigos */
   color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
 }
 /* HERO END */
 
@@ -97,6 +103,7 @@ main {
 #discountSection {
   display: flex;
   flex-direction: column-reverse;
+  height: 50vh;
 }
 
 #discountSection > img {
@@ -106,7 +113,6 @@ main {
 
 #discountSectionText {
   background-color: #F32838;
-  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -141,6 +147,10 @@ footer > ul {
   margin-bottom: 16px;
 }
 
+footer > ul > li {
+  cursor: pointer;
+}
+
 footer > img {
   height: 32px;
   object-fit: cover;
@@ -163,7 +173,7 @@ footer > div {
   #hero {
     justify-content: center;
     align-items: center;
-    margin-top: 0px;
+    margin-top: 64px;
   }
 
   #heroImg {
@@ -227,6 +237,7 @@ footer > div {
 
   footer > ul > li {
     margin: 0 8px;
+    padding: 8px;
   }
 
   footer > div {

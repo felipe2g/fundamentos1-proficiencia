@@ -17,6 +17,15 @@ header > div > ul {
 
 header > div > ul > li {
   font-size: 36px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.navOption:hover {
+  background-color: #FFF;
+  color: #000; /* Fallback para navegadores antigos */
+  color: rgba(0, 0, 0, 0.5);
+  transition: 1s;
 }
 
 @media only screen and (min-width: 768px){
