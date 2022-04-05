@@ -1,14 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+
 * {
-  padding:0;
   margin:0;
-  vertical-align:baseline;
-  list-style:none;
-  border:0;
   color: #FFF;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  max-width: 100vw;
   background-color: #A6A68C;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+}
+
+/* HERO START */
+#hero {
+  margin-top: 64px;
+}
+
+#heroImg {
+  background-image: url('/static/girl-with-dress.png');
+  height: 35vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+article {
+  background: lightcoral;
+}
+
+#heroText {
+  margin: 0 5vw;
+}
+
+#heroText > h1 {
+  margin: 16px 0px;
+  font-size: 32px;
+}
+
+#heroText > button {
+  background: none;
+  border: 1px solid #FFF;
+  padding: 15px 30px;
+  margin: 16px 0px 64px 0px;
+}
+/* HERO END */
+
+@media screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+  }
+
+  /* HERO START */
+  #hero {
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+  }
+
+  #heroImg {
+    height: 70vh;
+    width: 100%;
+  }
+
+  #heroText > button {
+    margin: 16px 0px;
+  }
+  /* HERO END */
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column-reverse;
+  }
 }
