@@ -32,12 +32,8 @@ main {
   background-position: top;
 }
 
-article {
-  background: lightcoral;
-}
-
 #heroText {
-  margin: 0 5vw;
+  margin: 16px 5vw 64px 5vw;
 }
 
 #heroText > h1 {
@@ -45,11 +41,17 @@ article {
   font-size: 32px;
 }
 
-#heroText > button {
+.button {
   background: none;
   border: 1px solid #FFF;
   padding: 15px 30px;
-  margin: 16px 0px 64px 0px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #FFF;
+  color: #000; /* Fallback para navegadores antigos */
+  color: rgba(0, 0, 0, 0.5);
 }
 /* HERO END */
 
@@ -85,6 +87,37 @@ article {
 }
 
 /* IMAGE GRID END */
+
+/* DISCOUNT SECTION START */
+#discountSection {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#discountSection > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#discountSectionText {
+  background-color: #F32838;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10vw;
+}
+
+#discountSectionText > h3 {
+  font-size: 36px;
+}
+
+#discountSectionText > span {
+  text-align: center;
+  margin: 16px 0px;
+}
+/* DISCOUNT SECTION END */
 
 @media screen and (min-width: 768px) {
   main {
@@ -122,6 +155,33 @@ article {
   }
 
   /* IMAGE GRID END */
+
+  /* DISCOUNT SECTION START */
+
+  #discountSection {
+    flex-direction: row;
+    margin-top: 64px;
+  }
+
+  #discountSection > img, #discountSection > div {
+    flex-grow: 1;
+    width: 50%;
+  }
+
+  #discountSectionText {
+    height: 100%;
+    max-width: 40vw;
+  }
+
+  #discountSectionText > span {
+    text-align: left;
+  }
+
+  #discountSectionText > button {
+    margin-top: 24px;
+  }
+
+  /* DISCOUNT SECTION END */
 }
 
 @media screen and (max-width: 768px) {
