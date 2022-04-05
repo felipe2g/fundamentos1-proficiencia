@@ -1,0 +1,33 @@
+#hero {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+}
+
+#headerImg {
+  background-color: blue;
+  background-image: url("/static/girl-with-dress.png");
+  height: 40vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#heroTextSection {
+  background-color: purple;
+}
+
+@media only screen and (min-width: 768px) {
+  #hero {
+    flex-direction: row;
+  }
+
+  #headerImg {
+    height: 70vh;
+    width: 100%;
+  }
+
+  #heroTextSection {
+    width: 50vw;
+  }
+}
