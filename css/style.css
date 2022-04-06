@@ -379,6 +379,7 @@ footer > div {
 
   #frequentQuestions > details {
     width: 80%;
+    max-width: 450px;
   }
 
   /* FREQUENT QUESTIONS END */
