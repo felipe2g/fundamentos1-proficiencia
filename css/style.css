@@ -21,12 +21,13 @@ body {
 }
 
 main {
-  display: flex;
+  
 }
 
 /* HERO START */
 #hero {
   margin-top: 64px;
+  display: flex;
 }
 
 #heroImg {
@@ -103,7 +104,6 @@ main {
 #discountSection {
   display: flex;
   flex-direction: column-reverse;
-  height: 50vh;
 }
 
 #discountSection > img {
@@ -163,6 +163,82 @@ footer > div {
 }
 
 /* FOOTER END */
+
+/* COLECTION HERO START */
+
+#seasonHero {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  margin-top: 64px;
+}
+
+#seasonHero > h1 {
+  font-size: 48px;
+  font-weight: normal;
+  margin-bottom: -15px;
+}
+
+#seasonHero > h5 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/* COLECTION HERO END */
+
+/* COLECTION ROW START */
+
+.cardSeason {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.cardSeason > h4 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+/* COLECTION ROW END */
+
+/* FREQUENT QUESTIONS START */
+
+#frequentQuestsSection {
+  margin-bottom: 64px;
+}
+
+#frequentQuestions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 36px;
+  padding: 16px;
+}
+
+#frequentQuestions > h1 {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+#frequentQuestions > details {
+  background-color: pink;
+  width: 100%;
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#frequentQuestions > details > p {
+  margin-top: 16px;
+}
+
+#callFAQ {
+  display: none;
+}
+
+/* FREQUENT QUESTIONS END */
 
 @media screen and (min-width: 768px) {
   main {
@@ -251,6 +327,62 @@ footer > div {
   }
 
   /* FOOTER END */
+
+  /* COLECTION ROW START */
+
+  .rowCardSeason {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cardSeason > img {
+    width: 100%;
+  }
+  /* COLECTION ROW END */
+
+  /* FREQUENT QUESTIONS START */
+
+  #frequentQuestions {
+    flex-grow: 1;
+    height: 100%;
+    margin-bottom: 64px;
+  }
+
+  #frequentQuestions > h1 {
+    font-size: 48px;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  #callFAQ {
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #callFAQ > h6 {
+    font-size: 36px;
+    width: 60%;
+    text-align: center;
+  }
+
+  #frequentQuestsSection {
+    display: flex;
+    flex-direction: row;
+    margin-top: 128px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #frequentQuestions > details {
+    width: 80%;
+  }
+
+  /* FREQUENT QUESTIONS END */
+
 }
 
 @media screen and (max-width: 768px) {
