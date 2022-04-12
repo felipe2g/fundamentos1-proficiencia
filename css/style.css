@@ -20,10 +20,6 @@ body {
   box-sizing: border-box;
 }
 
-main {
-  
-}
-
 /* HERO START */
 #hero {
   margin-top: 64px;
@@ -240,6 +236,46 @@ footer > div {
 
 /* FREQUENT QUESTIONS END */
 
+/* SHOP INFO START */
+#shopInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+#shopInfoImg {
+  width: 100%;
+  object-fit: cover;
+}
+
+#shopInfo > article {
+  padding: 36px;
+}
+
+#shopInfo > article > p {
+  margin-top: 16px;
+}
+/* SHOP INFO END */
+
+/* FAMILY START */
+#familyInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+#familyImg {
+  width: 100%;
+  object-fit: cover;
+}
+
+#familyInfo > article {
+  padding: 36px;
+}
+
+#familyInfo > article > p {
+  margin-top: 16px;
+}
+/* FAMILY END */
+
 @media screen and (min-width: 768px) {
   main {
     flex-direction: row;
@@ -384,6 +420,41 @@ footer > div {
 
   /* FREQUENT QUESTIONS END */
 
+  /* SHOP INFO START */
+  #shopInfo {
+    padding: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #shopInfo > article > h2 {
+    font-size: 48px;
+  }
+
+  #shopInfoImg {
+    width: 50vw;
+  }
+
+  /* SHOP INFO END */
+
+  /* FAMILY START */
+  #familyInfo {
+    padding: 36px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  #familyInfo > article > h2 {
+    font-size: 48px;
+  }
+
+  #familyImg {
+    width: 50vw;
+  }
+
+  /* FAMILY END */
 }
 
 @media screen and (max-width: 768px) {
