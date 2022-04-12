@@ -21,6 +21,14 @@ header > div > ul > li {
   cursor: pointer;
 }
 
+header > div > ul > li > a {
+  text-decoration: none;
+}
+
+.activeMenu {
+  text-decoration: underline;
+}
+
 .navOption:hover {
   background-color: #FFF;
   color: #000; /* Fallback para navegadores antigos */

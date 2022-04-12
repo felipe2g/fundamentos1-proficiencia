@@ -190,6 +190,18 @@ footer > div {
   padding: 16px;
 }
 
+.cardSeason figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.cardSeason figure:hover img {
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
 .cardSeason > h4 {
   margin-top: 16px;
   margin-bottom: 8px;
@@ -275,6 +287,100 @@ footer > div {
   margin-top: 16px;
 }
 /* FAMILY END */
+
+/* ICONS START */
+
+#contactSection {
+  margin-top: 64px;
+}
+
+#contactTitleSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contactTitleSection > h1 {
+  font-size: 48px;
+}
+
+#iconsContainer { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#iconsContainer > div { 
+  border: 1px solid #FAFAFA;
+  display: flex;
+  justify-content: center;
+  padding: 36px;
+  width: 180px;
+  margin: 16px;
+  cursor: pointer;
+  transition: border 0.33s;
+}
+
+#iconsContainer > div:hover {
+  border: 5px solid #FAFAFA;
+}
+
+#iconsContainer > div > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ICONS END */
+
+/* ADDRESS SECTION START */
+#addressSection {
+  margin-top: 64px;
+}
+
+#addressTitleSection {
+  display: flex;
+  justify-content: center;
+}
+
+#addressTitleSection > h1 {
+  font-size: 64px;
+}
+
+#addressSection > img {
+  margin-top: 64px;
+}
+
+#addressImg {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ADDRESS SECTION END */
+
+/* MAP SECTION START */
+#mapSection {
+  margin-top: 64px;
+}
+
+#mapTitleSection {
+  display: flex;
+  justify-content: center;
+}
+
+#mapTitleSection > h1 {
+  font-size: 56px;
+}
+
+#mapSection > img {
+  margin-top: 64px;
+}
+
+#mapImg {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* MAP SECTION END */
 
 @media screen and (min-width: 768px) {
   main {
@@ -371,7 +477,7 @@ footer > div {
     flex-direction: row;
   }
 
-  .cardSeason > img {
+  .cardSeason figure img {
     width: 100%;
   }
   /* COLECTION ROW END */
@@ -455,6 +561,73 @@ footer > div {
   }
 
   /* FAMILY END */
+  
+  /* ICONS START */
+    #contactSection {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+    }
+
+    #iconsContainer {
+      width: 50vw;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    #iconsContainer > div {
+      width: 40%;
+    }
+
+    #contactTitleSection {
+      justify-content: center;
+      width: 50%;
+    }
+
+    #contactTitleSection > h1 {
+      font-size: 64px;
+    }
+  /* ICONS END */
+
+  /* ADDRESS SECTION START */
+
+  #addressSection {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #addressTitleSection {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #addressImg {
+    width: 50%;
+  }
+
+  /* ADDRESS SECTION END */
+
+  /* ADDRESS SECTION START */
+
+  #mapSection {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  #mapTitleSection {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #mapImg {
+    width: 50%;
+  }
+
+  /* ADDRESS SECTION END */
 }
 
 @media screen and (max-width: 768px) {
