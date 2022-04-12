@@ -249,21 +249,21 @@ footer > div {
 /* FREQUENT QUESTIONS END */
 
 /* SHOP INFO START */
-#shopInfo {
+.shopInfo {
   display: flex;
   flex-direction: column;
 }
 
-#shopInfoImg {
+.shopInfoImg {
   width: 100%;
   object-fit: cover;
 }
 
-#shopInfo > article {
+.shopInfo > article {
   padding: 36px;
 }
 
-#shopInfo > article > p {
+.shopInfo > article > p {
   margin-top: 16px;
 }
 /* SHOP INFO END */
@@ -527,18 +527,18 @@ footer > div {
   /* FREQUENT QUESTIONS END */
 
   /* SHOP INFO START */
-  #shopInfo {
+  .shopInfo {
     padding: 36px;
     display: flex;
     flex-direction: row;
     align-items: center;
   }
 
-  #shopInfo > article > h2 {
+  .shopInfo > article > h2 {
     font-size: 48px;
   }
 
-  #shopInfoImg {
+  .shopInfoImg {
     width: 50vw;
   }
 
